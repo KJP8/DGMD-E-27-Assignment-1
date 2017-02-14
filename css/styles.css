@@ -1,0 +1,119 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #87CEF3;
+    color: #2C2933;
+}
+
+a {
+    color: #6C97F0;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #87CEF3;
+    text-decoration: none;
+}
+
+h3 {
+    margin-bottom: 0.3em;
+    color: #37627C;
+}
+
+h3+p {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+.wrapper {
+    background-color: #D3D8D4;
+    width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+}
+
+nav { 
+    background-color: #6C97F0;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+
+nav ul a {
+    color: #D3D8D4;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 1em 2em;
+    float: left;
+}
+
+header {
+    background: url(../img/boston-big1.png) no-repeat;
+    width: 100%;
+	height: 300px;
+}
+
+header h1 {
+    padding: 2em 0 0 1em;
+    margin: 0;
+}
+
+main {
+	overflow: auto;
+    padding: 3em;
+	background-color: #EFECCA;
+}
+main h2 {
+	font-size: 2em;
+}
+main p {
+	font-size: 1.5em;
+}
+
+/*div img {
+	width: 100%;
+	max-width: 225px;
+}*/
+
+main img {
+	float: left;
+	margin-right: 1.875em;
+	width: auto;
+	max-width: 100%;
+}
+
+article img {
+	float: left;
+	margin-right: 1.875em;
+	width: auto;
+	max-width: 100%;
+}
+
+/* my grid system */
+.row::after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.col-2
+
+.col-4
