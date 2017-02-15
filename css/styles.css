@@ -33,7 +33,7 @@ h3 {
 
 h3+p {
     font-size: 0.8em;
-    margin-top: 0;
+    margin: 0;
 }
 
 .wrapper {
@@ -48,6 +48,7 @@ nav {
     background-color: #6C97F0;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav ul {
@@ -102,9 +103,18 @@ main img {
 
 article img {
 	float: left;
-	margin-right: 1.875em;
+    margin-top: 1em;
 	width: auto;
 	max-width: 100%;
+}
+
+article img+p {
+    float: right;
+    margin-bottom: 0;
+}
+
+article p+p {
+    float: left;
 }
 
 /* my grid system */
@@ -114,6 +124,21 @@ article img {
 	clear: both;
 }
 
-.col-2
+[class*='col-']{
+	float: left;
+	margin-left: 4%;
+	min-height: 1px;
+	position: relative;
+}
 
-.col-4
+.col-1 {
+    width: 28%;
+}
+
+.col-2 {
+    width: 60%;
+}
+
+.col-3 {
+    width: 92%;
+}
