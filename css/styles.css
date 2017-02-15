@@ -153,12 +153,6 @@ article p+p {
         width: 44%;
     }
 }
-/* Mobile Portrate Screen Sizes */
-@media (max-width: 479px) {
-    [class*='col-'] {
-        width: 92%;
-    }
-}
 
 @media (max-width: 1202px) {
     main p {
@@ -177,5 +171,27 @@ article p+p {
         float: right;
         margin-bottom: 0;
         margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    article p+p {
+        font-size: 1.2em;
+    }
+}
+
+/* Mobile Portrate Screen Sizes */
+@media (max-width: 479px) {
+    [class*='col-'] {
+        width: 92%;
+    }
+    main h2 {
+        font-size: 1.17em
+    }
+    main p {
+        font-size: 1em;
+    }
+    main p+p {
+        font-size: 1.2em;
     }
 }
