@@ -9,6 +9,7 @@ html {
   box-sizing: inherit;
 }
 
+/* Global styles */
 body {
     font-family: Tahoma, Geneva, sans-serif;
     background-color: #87CEF3;
@@ -44,6 +45,7 @@ h3+p {
 	float: none;
 }
 
+/* nav styles */
 nav { 
     background-color: #6C97F0;
     position: sticky;
@@ -66,6 +68,7 @@ nav ul a {
     float: left;
 }
 
+/* header styles */
 header {
     background: url(../img/boston-big1.png) no-repeat;
     width: 100%;
@@ -77,10 +80,11 @@ header h1 {
     margin: 0;
 }
 
+/* main styles */
 main {
 	overflow: auto;
     padding: 3em;
-	background-color: #EFECCA;
+	background-color: #FCF6D9;
 }
 main h2 {
 	font-size: 2em;
@@ -89,18 +93,14 @@ main p {
 	font-size: 1.5em;
 }
 
-/*div img {
-	width: 100%;
-	max-width: 225px;
-}*/
-
 main img {
 	float: left;
-	margin-right: 1.875em;
+	margin-right: 2em;
 	width: auto;
 	max-width: 100%;
 }
 
+/* article styles */
 article img {
 	float: left;
     margin-top: 1em;
@@ -111,6 +111,7 @@ article img {
 article img+p {
     float: right;
     margin-bottom: 0;
+    margin-left: auto;
 }
 
 article p+p {
@@ -131,14 +132,50 @@ article p+p {
 	position: relative;
 }
 
-.col-1 {
+.col-1-2 {
     width: 28%;
 }
 
 .col-2 {
-    width: 60%;
+    width: 44%;
 }
 
 .col-3 {
     width: 92%;
+}
+
+/* media queries */
+
+/* Tablet and Mobile Landscape Screen Sizes */
+@media (min-width: 480px) and (max-width: 768px) {
+    .col-1-2,
+    .col-2 {
+        width: 44%;
+    }
+}
+/* Mobile Portrate Screen Sizes */
+@media (max-width: 479px) {
+    [class*='col-'] {
+        width: 92%;
+    }
+}
+
+@media (max-width: 1202px) {
+    main p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 1080px) {
+    main h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1015px) {    
+    main div {
+        float: right;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
 }
