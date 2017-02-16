@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 /* inherit border-box on all elements in the universe and before and after */
 *, 
 *:before, 
@@ -72,7 +73,6 @@ i {
     visibility: hidden;
 }
 
-
 /* header styles */
 header h1 {
     padding: 2em 0 0 1em;
@@ -85,10 +85,12 @@ main {
     padding: 3em;
 	background-color: #FCF6D9;
 }
+
 main h2 {
 	font-size: 2em;
     margin-top: auto;
 }
+
 main p {
 	font-size: 1.5em;
 }
@@ -97,7 +99,7 @@ main img {
 	float: left;
 	margin-right: 2em;
 	width: auto;
-	max-width: auto;
+	max-width: 100%;
 }
 
 /* article styles */
@@ -149,7 +151,7 @@ article p+p {
 /*Laptop and Desktop Screen Sizes*/
 @media (min-width: 768px) {
     header {
-        background: url(../img/boston-big1.png) no-repeat;
+        background: url(../img/boston-1.png) no-repeat;
         width: 100%;
         height: 300px;
     }
@@ -159,7 +161,7 @@ article p+p {
     }
 }
 
-/* Tablet and Mobile Landscape Screen Sizes */
+/* Tablet and Mobile Landscape Screen Sizes, swap background image */
 @media (min-width: 480px) and (max-width: 768px) {
     .col-1-2,
     .col-2 {
@@ -173,7 +175,7 @@ article p+p {
     }
 }
 
-/* adjust intro font size for smaller widths */
+/* adjust intro p font size for smaller widths */
 @media (max-width: 1202px) {
     main p {
         font-size: 1.2em;
@@ -195,32 +197,36 @@ article p+p {
     }
 }
 
-/* adjust the "Read more..." to be easier to click at smaller widths */
+/* adjust font sizes for easier clickability and readability at smaller widths */
 @media (max-width: 768px) {
     main p+p,
     article h3,
     article p+p {
         font-size: 1.5em;
     }
+    
     article p {
         font-size: 1.2em;
     }
 }
 
+/* show nav icons, hide nav text at smaller widths */
 @media (max-width: 630px) {
     i {
         visibility: visible;
     }
+    
     nav span {
         display: none;
     }
 }
 
-/* Mobile Portrate Screen Sizes */
+/* Mobile Portrate Screen Sizes, change background image */
 @media (max-width: 479px) {
     [class*='col-'] {
         width: 92%;
     }
+    
     header {
         background: url(../img/boston-3.png) no-repeat;
         width: 100%;
@@ -228,13 +234,16 @@ article p+p {
     }
 }
 
+/* adjust size of header h1 and nav icons, and move the main image over to the left so it's not cut off at smaller widths */
 @media (max-width: 380px) {
     header h1 {
         padding-left: .5em;
     }
+    
     nav ul a {
         padding: 1em 1.5em;
     }
+    
     .smallestImg {
         margin-left: -.5em;
     }
