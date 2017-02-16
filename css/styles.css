@@ -67,6 +67,11 @@ nav ul a {
     padding: 1em 2em;
     float: left;
 }
+    
+i {
+    visibility: hidden;
+}
+
 
 /* header styles */
 header h1 {
@@ -178,7 +183,7 @@ article p+p {
 /* adjust intro heading font size for smaller widths */
 @media (max-width: 1080px) {
     main h2 {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 }
 
@@ -192,8 +197,22 @@ article p+p {
 
 /* adjust the "Read more..." to be easier to click at smaller widths */
 @media (max-width: 768px) {
+    main p+p,
+    article h3,
     article p+p {
+        font-size: 1.5em;
+    }
+    article p {
         font-size: 1.2em;
+    }
+}
+
+@media (max-width: 630px) {
+    i {
+        visibility: visible;
+    }
+    nav span {
+        display: none;
     }
 }
 
@@ -202,19 +221,21 @@ article p+p {
     [class*='col-'] {
         width: 92%;
     }
-    main h2 {
-        font-size: 1.17em
-    }
-    main p {
-        font-size: 1em;
-    }
-    main p+p {
-        font-size: 1.2em;
-    }
-    
     header {
         background: url(../img/boston-3.png) no-repeat;
         width: 100%;
         height: 300px;
+    }
+}
+
+@media (max-width: 380px) {
+    header h1 {
+        padding-left: .5em;
+    }
+    nav ul a {
+        padding: 1em 1.5em;
+    }
+    .smallestImg {
+        margin-left: -.5em;
     }
 }
