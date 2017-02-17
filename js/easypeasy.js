@@ -1,3 +1,4 @@
+// Easy Peasy Equal Heights benhowdle.im/easy-peasy-equal-heights.html
 function sameHeights(selector) {
     var selector = selector || '[data-key="sameHeights"]',
         query = document.querySelectorAll(selector),
