@@ -1,3 +1,11 @@
+.row {
+    border-bottom: groove #44ACD2;;
+}
+
+.header {
+    border-bottom: none;
+}
+
 article img {
     margin-top: 0;
 }
