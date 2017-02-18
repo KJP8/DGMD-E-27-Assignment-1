@@ -13,7 +13,8 @@ div h2 {
     margin-top: .5em;
 }
 
-.aboutUs p {
+.aboutUs p,
+section h4{
     padding:  0 2em;
 }
 
@@ -37,7 +38,7 @@ section li {
         font-size: 1.5em;
     }
     
-    section p,
+    section h4,
     section ul {
         font-size: 1.7em;
     }

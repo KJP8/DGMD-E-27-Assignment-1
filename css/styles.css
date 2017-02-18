@@ -148,7 +148,7 @@ article p+p {
 
 /* media queries */
 
-/*Laptop and Desktop Screen Sizes*/
+/*Laptop and Desktop Screen Sizes, hide nav icons*/
 @media (min-width: 768px) {
     header {
         background: url(../img/boston-1.png) no-repeat;
@@ -210,18 +210,7 @@ article p+p {
     }
 }
 
-/* show nav icons, hide nav text at smaller widths */
-@media (max-width: 630px) {
-    i {
-        visibility: visible;
-    }
-    
-    nav span {
-        display: none;
-    }
-}
-
-/* Mobile Portrate Screen Sizes, change background image */
+/* Mobile Portrate Screen Sizes, change background image, hide nav text, show nav icons */
 @media (max-width: 479px) {
     [class*='col-'] {
         width: 92%;
@@ -231,6 +220,14 @@ article p+p {
         background: url(../img/boston-3.png) no-repeat;
         width: 100%;
         height: 300px;
+    }
+    
+    i {
+        visibility: visible;
+    }
+    
+    nav span {
+        display: none;
     }
 }
 
