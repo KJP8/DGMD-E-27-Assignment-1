@@ -1,5 +1,14 @@
-article span {
-    visibility: hidden;
+.img23 {
+    padding-top: 3.8em;
+}
+
+article img {
+    margin-top: 0;
+}
+
+article h4 {
+    color: #37627C;
+    text-align: center;
 }
 
 /*Laptop and Desktop Screen Sizes*/
@@ -17,6 +26,9 @@ article span {
         background: url(../img/MVCC/edgartown-710.png) no-repeat;
         width: 100%;
         height: 300px;
+    }
+    article p {
+        font-size: 1.5em;
     }
 }
 
