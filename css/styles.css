@@ -46,6 +46,10 @@ h3+p {
 	float: none;
 }
 
+.last {
+    padding-bottom: 2em;
+}
+
 /* nav styles */
 nav { 
     background-color: #6C97F0;
